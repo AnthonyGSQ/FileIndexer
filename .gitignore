@@ -1,0 +1,27 @@
+# Ignorar la carpeta build
+/build/
+
+# Archivos generados por el sistema operativo
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# Archivos de configuración del entorno de desarrollo
+.vscode/           # Visual Studio Code
+.idea/             # JetBrains IDEs
+
+# Archivos de compilación y temporales
+*.o                # Archivos objeto
+*.a                # Archivos estáticos
+*.so               # Archivos compartidos
+*.out              # Archivos de salida generados por compiladores
+*.exe              # Ejecutables en Windows
+*.log              # Archivos de log
+
+# Archivos de configuración de CMake
+CMakeFiles/        # Archivos de configuración generados por CMake
+CMakeCache.txt     # Cache de CMake
+Makefile           # Archivos Makefile generados
+
+# Archivos de pruebas
+*.gcda             # Archivos de cobertura de código (gcov)
+*.gcno             # Archivos de cobertura de código (gcov)
