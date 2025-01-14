@@ -2,14 +2,15 @@
 #define SEEKER_HPP
 
 #include <iostream>
-#include <ifstream>
+#include <fstream>
 #include <string>
+#include <memory>
 
 class Seeker {
     private:
-    unique_ptr<ifstream> fileptr;
-    string word;
-    string line;
+    std::unique_ptr<std::ifstream> fileptr;
+    std::string word;
+    std::string line;
     void SearchWord();
     int SendData();
     public:

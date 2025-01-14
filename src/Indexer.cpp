@@ -1,7 +1,7 @@
 #include "Indexer.hpp"
 #include <iostream>
 #include <string>
-#include <ifstream>
+#include <fstream>
 
 Indexer::Indexer(){
 }
@@ -15,5 +15,5 @@ void Indexer::AddSections(){
 void Indexer::AddData(){
 }
 
-~Indexer(){
+Indexer::~Indexer(){
     }

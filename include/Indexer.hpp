@@ -2,12 +2,12 @@
 #define INDEXER_HPP
 
 #include <iostream>
-#include <ofstream>
+#include <fstream>
 #include <string>
 
 class Indexer {
     private:
-    string line
+    std::string line;
     void AddLines();
     void AddSections();
     void AddData();
