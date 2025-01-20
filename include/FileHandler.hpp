@@ -1,13 +1,17 @@
 #ifndef FILEHANDLER_HPP
 #define FILEHANDLER_HPP
 #include <iostream>
-#include <ifstream>
+#include <string>
+#include <fstream>
+#include <memory>
 
 
 class FileHandler {
     private:
-    ifstream file;
-    string file_format;
+    std::string filename;
+    std::unique_ptr<std::ifstream> fileptr;
+    std::string file_format;
+    void OpenFile();
     bool FileFinded();
     bool ValidFileFormat();
     public:
