@@ -1,4 +1,5 @@
 #include "FileHandler.hpp"
+#include "Seeker.hpp"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -6,6 +7,7 @@
    
 FileHandler::FileHandler(){
     OpenFile();
+    Seeker seeker;
 }
 
 void FileHandler::OpenFile(){
@@ -29,6 +31,7 @@ void FileHandler::OpenFile(){
 
 bool FileHandler::FileFinded(){
     if(fileptr->is_open()){
+        std::cout<<"File finded!"<<std::endl;
         return true;
     }
     return false;
