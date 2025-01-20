@@ -8,13 +8,13 @@
 
 class Seeker {
     private:
-    std::unique_ptr<std::ifstream> fileptr;
+    std::shared_ptr<std::ifstream> fileptr;
     std::string word;
     std::string line;
     void SearchWord();
     int SendData();
     public:
-    Seeker();
+    Seeker(std::shared_ptr<std::ifstream> fileptr_);
     ~Seeker();
 
 };

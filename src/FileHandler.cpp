@@ -7,7 +7,7 @@
    
 FileHandler::FileHandler(){
     OpenFile();
-    Seeker seeker;
+    Seeker seeker(fileptr);
 }
 
 void FileHandler::OpenFile(){
@@ -18,7 +18,7 @@ void FileHandler::OpenFile(){
         std::cout<<"Not a valid file name!, please make sure to write the name propedly"<<std::endl;
         return;
     }
-    fileptr = std::make_unique<std::ifstream>(filename);
+    fileptr = std::make_shared<std::ifstream>(filename);
     if(!ValidFileFormat()){
         std::cout<<"Invalid file format!, This program only has support for .csv and .txt files"<<std::endl;
         return;
