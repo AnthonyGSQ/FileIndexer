@@ -11,6 +11,7 @@ class FileHandler {
     std::string filename;
     std::shared_ptr<std::ifstream> fileptr;
     std::string file_format;
+    std::string format;
     void OpenFile();
     bool FileFinded();
     bool ValidFileFormat();

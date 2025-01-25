@@ -7,7 +7,7 @@
    
 FileHandler::FileHandler(){
     OpenFile();
-    Seeker seeker(fileptr);
+    Seeker seeker(fileptr, format);
 }
 
 void FileHandler::OpenFile(){
@@ -39,7 +39,7 @@ bool FileHandler::FileFinded(){
 
 bool FileHandler::ValidFileFormat(){
     size_t pos = filename.rfind('.');
-    std::string format = filename.substr(pos+1);
+    format = filename.substr(pos+1);
     std::cout<<"File format: "<<format<<std::endl;
     if(format == "txt" || format == "csv"){
         return true;

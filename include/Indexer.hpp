@@ -13,6 +13,9 @@ class Indexer {
     void AddData();
     public:
     Indexer();
+    void getLine(std::string line);
+    void getSection(int section_number, std::string section_part);
+    void getData(float frecuency, bool section_case);
     ~Indexer();
 
 };
