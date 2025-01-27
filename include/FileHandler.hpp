@@ -12,7 +12,7 @@ class FileHandler {
     std::shared_ptr<std::ifstream> fileptr;
     std::string file_format;
     std::string format;
-    void OpenFile();
+    bool OpenFile();
     bool FileFinded();
     bool ValidFileFormat();
     public:
