@@ -1,0 +1,22 @@
+2025-01-26 12:00:01 [INFO] Lorem ipsum dolor sit amet, sistema iniciado correctamente.
+2025-01-26 12:01:15 [DEBUG] Carga de datos completada. Lorem en tiempo récord.
+2025-01-26 12:03:42 [WARNING] El archivo de configuración contiene valores predeterminados. Lorem es solo un ejemplo.
+
+2025-01-26 12:05:18 [ERROR] No se pudo procesar el archivo de entrada.
+Descripción:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Phasellus convallis neque nec massa tincidunt, at gravida risus viverra. 
+Nam tincidunt feugiat odio id facilisis. Vestibulum ante ipsum primis in 
+faucibus orci luctus et ultrices posuere cubilia curae; Integer vel 
+eleifend ligula. Nulla facilisi.
+
+Sugerencias:
+1. Verifica que el archivo contenga "Lorem" en los datos correctos.
+2. Asegúrate de que el archivo no esté corrupto o vacío.
+3. Reintenta la operación.
+
+2025-01-26 12:10:05 [CRITICAL] El sistema se cerrará debido a un fallo inesperado.
+Motivo:
+Lorem nec eros eget turpis cursus efficitur sit amet non velit. 
+Aenean aliquet luctus libero, quis Lorem turpis feugiat a. Suspendisse 
+potenti. In vel orci tincidunt, tempor magna id, consequat mauris.

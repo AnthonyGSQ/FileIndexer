@@ -9,9 +9,10 @@
 class FileHandler {
     private:
     std::string filename;
-    std::unique_ptr<std::ifstream> fileptr;
+    std::shared_ptr<std::ifstream> fileptr;
     std::string file_format;
-    void OpenFile();
+    std::string format;
+    bool OpenFile();
     bool FileFinded();
     bool ValidFileFormat();
     public:
